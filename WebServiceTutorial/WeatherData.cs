@@ -8,9 +8,6 @@ namespace WebServiceTutorial
         [JsonProperty("name")]
         public string Title { get; set; }
 
-        [JsonProperty("country")]
-        public string Country { get; set; }
-
         [JsonProperty("weather")]
         public Weather[] Weather { get; set; }
 
@@ -22,5 +19,8 @@ namespace WebServiceTutorial
 
         [JsonProperty("wind")]
         public Wind Wind { get; set; }
+
+        [JsonProperty("sys")]
+        public Sys Sys { get; set; }
     }
 }
